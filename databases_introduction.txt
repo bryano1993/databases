@@ -1,0 +1,88 @@
+1.What data types do each of these values represent?
+
+"A Clockwork Orange" - string
+42 - integer
+09/02/1945 - integer
+98.7 - float
+$15.99 - float
+
+2. Explain when a database would be used. Explain when a text file would be used.
+
+- A database would be used to look up start times for a movie and creating a user account for a website. A text file would be used to 
+ create a file that contains text such as this one and are readable by humans. 
+
+3.Describe one difference between SQL and other programming languages.
+
+-SQL is declarative where other programming languages such as Java are procedural. 
+
+4.In your own words, explain how the pieces of a database system fit together at a high level.
+
+- They are applications that allow users to manage data through interfaces such as a GUI or command line. To query through a database 
+  the programming language SQL is used.
+
+5.Explain the meaning of table, row, column, and value.
+
+- The meaning of the table is to structure the data in a readable way. A row is the conceptual data  and can be accessed through certain commands 
+  in SQL. The columns represent data categories. Values are pieces of data.
+
+6. List three data types that can be used in a table.
+
+- Integer, float, and string. 
+
+7. Given this payments table, provide an English description of the following queries and include their results:
+
+     SELECT date, amount
+     FROM payments;
+
+     - Selects the date and amount column from the payments table (database) 
+
+     The query result will be
+
+     Date         Amount
+     2016-5-01    1500.00
+     2016-5-10    37.00
+     2016-5-15    124.93
+     2016-5-23    54.72
+
+     SELECT amount
+     FROM payments
+     WHERE amount > 500;
+
+     - Selects the amount column from the payments table where the amount is greater than 500. 
+     
+     The query result will be 
+
+      Amount
+     1500.00
+
+     SELECT *
+     FROM payments
+     WHERE payee = 'Mega Foods';
+
+     - Selects all of the columns of where payee equals Mega Foods. 
+     
+     The query result will be
+
+      Date       Payee       Amount    Memo
+     2016-5-15  Mega Foods  124.93    Groceries
+
+8.Given this users table, write SQL queries using the following criteria and include the output:
+
+The email and sign-up date for the user named DeAndre Data.
+
+    SELECT email and signup
+    FROM users
+    WHERE name = 'Deandre Data';
+
+The user ID for the user with email 'aleesia.algorithm@uw.edu'.
+
+    SELECT userId
+    FROM users
+    WHERE email = 'alessia.algorithm@uw.edu';
+
+
+All the columns for the user ID equal to 4.
+
+    SELECT *
+    FROM users
+    WHERE userId = 4;
