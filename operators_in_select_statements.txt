@@ -89,7 +89,7 @@ If you can’t list these from memory, do these flashcards until you can!
     > Greater than ex)  find the age of students that are greater than 5 feet.
     < Less than ex) find the number of students in the classroom that are less than 14 years old
     = Equal to  ex) set variable x to 10
-    <= less or equal to   ex) find the height of the waterbottle if it is less than or equal a width of 5 cm
+    <= less or equal to   ex) find the height of the water bottle if it is less than or equal a width of 5 cm
     >= greater than or equal to   ex) find a person who can code projects with lines of code greater than or equal 1000
     != not equal to   ex) find the product of a number that does not equal 50
 
